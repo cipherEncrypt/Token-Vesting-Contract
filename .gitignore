@@ -1,0 +1,44 @@
+# --- secrets & credentials (never commit) ---
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+.secrets
+
+# --- Foundry build & deploy artifacts ---
+cache/
+out/
+broadcast/
+foundry-cache/
+
+# local anvil / dry-run only (redundant if broadcast/ ignored, kept for clarity)
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# --- logs ---
+.logs/
+*.log
+
+# --- IDE & editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- misc ---
+.ignore/
+docs/
