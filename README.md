@@ -82,9 +82,7 @@ Allocation: 1,000,000 VEST. Schedule started Nov 2023 — fully vested now; call
 - **Why linear from `start` not cliff end?** Industry-standard (OpenZeppelin uses the same model). Alternative: vest only over `(vestingDuration - cliffDuration)` after cliff — different economics, document which you picked.
 - **What if more tokens are sent to the contract?** `totalAllocation()` grows; vesting math scales to the new total. No admin function needed.
 
-## License
 
-MIT
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.20-363636)
 ![Foundry](https://img.shields.io/badge/Built%20with-Foundry-000000)
 ![Tests](https://img.shields.io/badge/tests-13%20passing-brightgreen)
